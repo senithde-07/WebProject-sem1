@@ -236,7 +236,39 @@
 
 
     
-    
+
+
+
+
+
+
+
+<!--Java Script for menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu()
+    {
+        navLinks.style.right = "0" ;
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-250px";
+    }
+
+
+    $(function() {
+$('a[href*=#]').on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+});
+});
+
+
+</script>
+
+
+
 
 </body>
 </html>
