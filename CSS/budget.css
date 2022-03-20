@@ -56,7 +56,25 @@
 
 
 
+/* image hover */
 
+.img-wrapper {  
+  overflow: hidden; 
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
+}
+
+.img-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
 
 
 
@@ -74,10 +92,11 @@
     padding: 0 0 30px 0;
     color: #000;
     font-size: 14px;
-    margin-top: 150px;
+    
   }
   #footer .footer-top {
     padding: 60px 0 30px 0;
+    margin-top: 150px;
   }
   #footer .footer-top .footer-info {
     margin-top: -90px;
