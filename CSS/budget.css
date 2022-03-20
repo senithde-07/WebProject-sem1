@@ -56,6 +56,26 @@
 
 
 
+/* image hover */
+
+.img-wrapper {  
+  overflow: hidden; 
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
+}
+
+.img-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
+
 
 
 
