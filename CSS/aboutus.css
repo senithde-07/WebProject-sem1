@@ -1,0 +1,86 @@
+.main-div
+{
+    height: 100vh;
+    background-color: white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-clm{
+    flex-direction: column;
+}
+.nav-child{
+    display: flex;
+    
+}
+.nav-child>*
+{
+    
+    /* background-color: bisque; */
+    /* margin: 30px o; */
+    margin:30px;
+    margin-top: 8px;
+
+}
+.margin-left{
+    margin-left: 3%;
+}
+
+/*reserve now btn*/
+
+.btn0 
+{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding:12px 34px;
+    font-style: 17px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.btn0:hover
+{
+    color: rgb(0, 0, 0);
+    border: 1px solid (#ff5246);
+    background:#ff5246; 
+    transition:0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .nav-child{
+        display: flex;
+        flex-direction: column;
+    }
+}
