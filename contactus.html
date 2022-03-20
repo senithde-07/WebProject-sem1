@@ -1,179 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <script src="https://kit.fontawesome.com/7513e90aa8.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
 
+  <!-- CSS file -->
+  <link rel="stylesheet" href="CSS/contactus.css">
 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
 
-    <style>
-      /*contact us page*/
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-.button{background-color: #C8DCF7;border-radius: 8px;border: none; padding: 8px;cursor: pointer;text-align: center;}
+  <!-- JS Bootstrap    -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
 
-.table{
-  border:15px solid white;
-  
-}
-.td{
-  border:15px solid white;
-  background-color:#F9F4F4;
-}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
-.tdh{
-  border:10px solid white;
-  background-color:#F9F4F4;
-}
-	
-.tr {
-  background-color:#F9F4F4;}
-.img{ border-radius: 50%;}
-    </style>
-
-
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
 </head>
 
-
 <body>
-    <section class="header">
-        <!--nav bar-->
 
-        <nav>
-            <a href="index.html"><img src="img/Logo 1.png"></a>
+  <!-- nav bar -->
 
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">APARTMENT</i></a>
-
-
-                        <!--dropdown menu-->
-                    <div class="dropdown-menu">
-                        <ul>
-                          <li><a herf="#">Budget House</a></li>
-                          <li><a herf="#">Semi Luxury House</a></li>
-                          <li><a herf="#">Luxury House</a></li>
-                        </ul>
-                    </div>
-
-                    </li>
-                    <li><a href="facilitice.html">FACILITICE</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="aboutus.html">ABOUT US</a></li>
-                    <li><a href="contactus.html">CONTACT US</a></li>
-
-                    <!--reserve now btn-->
-                    <a href="reservenow.html" class="btn0">RESERVE NOW</a>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>  
-
-
-
-        <table style="width:100%" class="table">
-            <tr class="tr">
-             <td rowspan = "4" bgcolor="#F9F4F4" class="tdh">
-            <center>
-            <img src="img/map1.jpg" alt="MAP" usemap="#map" width="500" height="379" >
-            
-            <map name="map">
-              <area shape="circle" coords="50,180,30,35" alt="Location" href="https://www.google.com/maps/place/Kalubowila+Gardens,+Dehiwala-Mount+Lavinia/@6.9072338,79.9119229,10.12z/data=!4m5!3m4!1s0x3ae25a51c2c55783:0xb100773292519315!8m2!3d6.8665686!4d79.8816188">
-            </center>
-            </td>
-            <td bgcolor="#F9F4F4" class="tdh"><center><input type="text" name="fname" placeholder="First Name" size="35"></center></td>
-                <td bgcolor="#F9F4F4" class="tdh"><center><input type="text" name="lname" placeholder="Last Name" size="35"></center></td>
-              </tr>
-              <tr bgcolor="#F9F4F4">
-                <td class="tdh" ><center><input type="text" name="email" placeholder="Email" size="35"></center></td>
-                <td class="tdh"><center><input type="text" name="tel" placeholder="Phone No" size="35"></center></td>
-              </tr>
-                  <tr bgcolor="#F9F4F4">
-                 
-                <td colspan="2" class="tdh" ><center><input type="text" style="height:80px; width:520px;" placeholder="Message"></center></td>
-                      <tr bgcolor="#F9F4F4">
-                <td colspan="2" class="tdh"><center>
-                    <button class="button ">Send Message</button></center>
-                          </td></tr>
-             
-            </table>
-            <br><br>
-            <table height="150" style="width:100%" class="table">
-              <tr class="tr">
-                  <td width="31%" height="127" class="td"><center><img src="img/location.jpg" class="img" width=50 height=50 ><br><br>Green Villa,Kalubowila gardens ,Colombo</center></td>
-                <td width="35%" class="td"><center><img src="img/mail.png" class="img" width=50 height=50 ><br><br>info@greenvilla.com</center></td> 
-                <td width="34%" class="td"><center><img src="img/cll.jpg" class="img" width=50 height=50 ><br><br> 0772080949<br>
-                    0345579234</center>
-                </td>
-              </tr>
-             
-            </table><br>
-
-
-
-
-
-
-
-            <!--footer-->
-
-   <footer>
-    <div class="row">
-        <div class="col">
-            <a href="index.html"><img src="img/logo.png" class="logo"><h3 class="Ap"><br><br></h3><br><br><br><br><br><br></a>
-            <p>The requried text should be replaced with this sentence.</p><br>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram"></i> 
-        <hr>
-        <p class="copyright">apartment.com © 2022- All Rights Reserved</p>
-
-          
+  <div class="main-div">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <div class="margin-left">
+          <a class="navbar-brand " href="index.html"><img src="img/Logo.png" alt="" width="80"
+              style="margin-top: 10px;"></a>
         </div>
-        <div class="col">
-            <h3>Links<div class="underline"></div></h3>
-        <ul>
-            <li><a href="index.html"></a>Home</li>
-            <li><a href="#"></a>Apartment</li>
-            <li><a href="facilitice.html"></a>Facilities</li>
-            <li><a href="gallery.html"></a>Gallery</li>
-            <li><a href="aboutus.html"></a>About Us</li>
-            <li><a href="contactus.html"></a>Contact Us</li>
-        </ul> 
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse center" id="navbarSupportedContent">
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <div class="nav-child">
+                <li class="nav-item ">
+                  <a class="nav-link active text-dark" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    APARTMENT
+                  </a>
+                  <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="budget.html">Budget House</a></li>
+                    <li><a class="dropdown-item" href="semiluxury.html">Semi Luxury House</a></li>
+                    <li><a class="dropdown-item" href="luxury.html">Luxury House</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-dark" href="facilitice.html">FACILITIES</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-dark" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-dark" href="aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-dark" href="contactus.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                  <a href="reserve.html" class="btn0">Reserve Now</a>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div class="col">
-            <h3>Address<div class="underline"></div></h3>
-            <p>No:- 65/A, High Level road<br> Nugegoda<br> 10021.</p><br>
-           
-            <h3>Email<div class="underline"></div></h3>
-            <p class="email"><i class="far fa-envelope"></i> info@apartment.com</p><br>
+      </div>
+    </nav>
 
-            <h3>Phone<div class="underline"><span></span></div></h3>
-            <p><i class="fas fa-phone"></i> +94 11 234 1139</p>
-            <p><i class="fas fa-phone"></i> +94 70 342 3257</p>
-        </div>                
-    </div>
-    
-</footer>
+
+  </div>
 
 
 
 
 
 
-
-  
 
 </body>
+
 </html>
